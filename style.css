@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Karla:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,500;1,600;1,700&display=swap');
+html,
+body {
+	background-color: hsl(204, 43%, 93%);
+	margin: 0;
+	padding: 10vh 10vh 10vh 10vh;
+	min-height: 100vh;
+	font-family: Karla;
+	box-sizing: border-box;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+html,
+body ul {
+	list-style-type: none;
+}
+
+.container {
+	height: 100%;
+	max-width: 100vh;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin: auto;
+	border-radius: .5em;
+	box-shadow: 0px 2px 5px gray;
+}
+
+.header {
+	background: white;
+	height: 15em;
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+}
+
+.header ul {
+	line-height: 1.5em;
+}
+
+.header h1 {
+	padding-top: 1em;
+	color: hsl(179, 62%, 43%);
+}
+
+.l1 {
+	color: hsl(71, 73%, 54%);
+	font-size: 1.3em;
+	padding-top: 0.3em;
+}
+
+.l2 {
+	color: lightgray;
+	font-size: 1.2em;
+}
+
+.l3 {
+	color: lightgray;
+	font-size: 1.2em;
+}
+
+.l1+.l2 {
+	padding-top: 1em;
+}
+
+.grid {
+	flex: 1;
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	grid-gap: 0px;
+	color: white;
+}
+
+.card1 {
+	background-color: rgb(43, 179, 177);
+	padding-top: 1em;
+	border-bottom-left-radius: .5em;
+}
+
+.g1 {
+	font-size: 1.9em;
+	float: left;
+	margin-right: .5em;
+}
+
+.g2 {
+	padding: .6em;
+	color: lightgray;
+}
+
+.g3 {
+	padding-top: .6em;
+	margin-bottom: 1.8em;
+}
+
+.b1 {
+	background-color: hsl(71, 73%, 54%);
+	width: 16em;
+	height: 3em;
+	font-size: 18px;
+	border-radius: .5em;
+	color: white;
+	margin-left: 0.9em;
+	justify-content: center;
+	align-items: center;
+	border: none;
+}
+
+.card2 {
+	padding-top: 1em;
+	background-color: rgb(74, 190, 189);
+	line-height: 1.4em;
+	border-bottom-right-radius: .5em;
+}
+
+@media (max-width:650px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		align-items: center;
+	}
+	.header {
+		background: white;
+		height: 20em;
+		width: 23em;
+		box-shadow: 0px 2px 5px gray;
+		border-top-left-radius: .5em;
+		border-top-right-radius: .5em;
+	}
+	.grid {
+		flex: 1;
+		display: grid;
+		grid-template: 1fr / 1fr;
+		grid-gap: 0px;
+		color: white;
+	}
+	.card1 {
+		background-color: rgb(43, 179, 177);
+		height: 15em;
+		width: 23em;
+		box-shadow: 0px 2px 5px gray;
+		border-bottom-left-radius: 0em;
+	}
+	.card2 {
+		box-shadow: 0px 4px 5px gray;
+		background-color: rgb(74, 190, 189);
+		line-height: 1.4em;
+		border-bottom-left-radius: .5em;
+		border-bottom-right-radius: .5em;
+		height: 15em;
+		width: 23em;
+	}
+	.g1 {
+		font-size: 1.4em;
+	}
+	.g2 {
+		padding: .4em;
+	}
+	.l2 {
+		font-size: 1em;
+	}
+	.l3 {
+		font-size: 1em;
+	}
+	.b1 {
+		width: 16em;
+		margin-left: auto;
+	}
+}
