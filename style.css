@@ -4,7 +4,6 @@ body {
 	background-color: hsl(204, 43%, 93%);
 	margin: 0;
 	padding: 10vh 10vh 10vh 10vh;
-	min-height: 100vh;
 	font-family: Karla;
 	box-sizing: border-box;
 	justify-content: space-around;
@@ -168,7 +167,7 @@ body ul {
 		font-size: 1em;
 	}
 	.b1 {
-		width: 16em;
+		width: 14em;
 		margin-left: auto;
 	}
 }
